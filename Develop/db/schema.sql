@@ -22,5 +22,17 @@ CREATE TABLE product (
 )
 
 CREATE TABLE tag (
-    tag_id
+    tag_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    tag_name VARCHAR(30),
+)
+
+CREATE TABLE ProductTag (
+    pt_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    product_id INT NOT NULL,
+    tag_id INT 
+    FOREIGN KEY (product)
+    REFERENCES product (product_id),
+    FOREIGN KEY (tag)
+    REFERENCES tag (tag_id)
+    ON DELETE CASCADE
 )
