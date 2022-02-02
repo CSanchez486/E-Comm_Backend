@@ -20,15 +20,20 @@ SO THAT my company can compete with other e-commerce companies
 
 ```md
 GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
+
+1.WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
 THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
+
+2. WHEN I enter schema and seed commands
 THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
+
+3.WHEN I enter the command to invoke the application
 THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia for categories, products, or tags
+
+4.WHEN I open API GET routes in Insomnia for categories, products, or tags
 THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
+
+5.WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
 
@@ -60,57 +65,57 @@ Your database should contain the following four models, including the requiremen
 
 * `Category`
 
-  * `id`
+  * `id`x
 
-    * Integer.
+    * Integer.X
   
-    * Doesn't allow null values.
+    * Doesn't allow null values.X
   
-    * Set as primary key.
+    * Set as primary key.X
   
-    * Uses auto increment.
+    * Uses auto increment.X
 
-  * `category_name`
+  * `category_name`x
   
-    * String.
+    * String.x
   
-    * Doesn't allow null values.
+    * Doesn't allow null values. x
 
-* `Product`
+* `Product`X
 
-  * `id`
+  * `id`X
   
-    * Integer.
+    * Integer.X
   
-    * Doesn't allow null values.
+    * Doesn't allow null values.X
   
-    * Set as primary key.
+    * Set as primary key.X
   
-    * Uses auto increment.
+    * Uses auto increment.X
 
-  * `product_name`
+  * `product_name`X
   
-    * String.
+    * String.X
   
-    * Doesn't allow null values.
+    * Doesn't allow null values.X
 
-  * `price`
+  * `price`X
   
-    * Decimal.
+    * Decimal.X
   
-    * Doesn't allow null values.
+    * Doesn't allow null values.X
   
-    * Validates that the value is a decimal.
+    * Validates that the value is a decimal.X
 
-  * `stock`
+  * `stock`x
   
-    * Integer.
+    * Integer.x
   
-    * Doesn't allow null values.
+    * Doesn't allow null values.x
   
-    * Set a default value of `10`.
+    * Set a default value of `10`.x
   
-    * Validates that the value is numeric.
+    * Validates that the value is numeric.x
 
   * `category_id`
   
@@ -118,45 +123,45 @@ Your database should contain the following four models, including the requiremen
   
     * References the `Category` model's `id`.
 
-* `Tag`
+* `Tag`x
 
   * `id`
   
-    * Integer.
+    * Integer.x
   
-    * Doesn't allow null values.
+    * Doesn't allow null values.x
   
-    * Set as primary key.
+    * Set as primary key.x
   
-    * Uses auto increment.
+    * Uses auto increment.x
 
-  * `tag_name`
+  * `tag_name`x
   
-    * String.
+    * String.x
 
-* `ProductTag`
+* `ProductTag`x
 
-  * `id`
+  * `id`x
 
-    * Integer.
+    * Integer. x
 
-    * Doesn't allow null values.
+    * Doesn't allow null values. x
 
-    * Set as primary key.
+    * Set as primary key. x
 
-    * Uses auto increment.
+    * Uses auto increment. x
 
-  * `product_id`
+  * `product_id`x
 
-    * Integer.
+    * Integer.x
 
-    * References the `Product` model's `id`.
+    * References the `Product` model's `id`.X
 
-  * `tag_id`
+  * `tag_id`X
 
-    * Integer.
+    * Integer. X
 
-    * References the `Tag` model's `id`.
+    * References the `Tag` model's `id`. X
 
 ### Associations
 

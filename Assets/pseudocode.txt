@@ -1,0 +1,17 @@
+pseudocode - e-comm back end
+
+needs: express.js, sequelize, mysql, dotenv
+
+submit - walk through video
+
+X 1. add name, mysql username & password >
+connect to db with sequelize
+
+2. enter schema & seed commands > dev datavase created and is seed with test data.
+
+3. add command invoke app > server is started & sequelize models sync to mysql database
+
+4. insomnia - needs to get single categories, prod. & tags > display in json
+
+5. insomnia - test post, put & deletes > can update db
+

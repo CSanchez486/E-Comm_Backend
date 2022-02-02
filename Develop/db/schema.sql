@@ -27,7 +27,7 @@ CREATE TABLE tag (
 )
 
 CREATE TABLE ProductTag (
-    pt_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    ptag_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     product_id INT NOT NULL,
     tag_id INT 
     FOREIGN KEY (product)
@@ -36,3 +36,4 @@ CREATE TABLE ProductTag (
     REFERENCES tag (tag_id)
     ON DELETE CASCADE
 )
+
