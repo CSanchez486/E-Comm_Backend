@@ -10,6 +10,21 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
+    P_T_Shirt :{
+      type: DataTypes.STRING,
+    },
+    Sneakers: {
+      type: DataTypes.STRING,
+    },
+    Baseball_Hat: {
+      type: DataTypes.STRING,
+    },
+    Vinyl_Record: {
+      type: DataTypes.STRING,
+    },
+    Cargo_Shorts: {
+      type: DataTypes.STRING,
+    },
   },
   {
     sequelize,
