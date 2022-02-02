@@ -7,20 +7,15 @@ class Category extends Model {}
 Category.init(
   {
     // define columns
-    Shirts: {
-      type: DataTypes.STRING,
+    id: {
+      type: DataTypes.integer,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement:true,
     },
-    Shorts: {
+    category_name: {
       type: DataTypes.STRING,
-    },
-    Music: {
-      type: DataTypes.STRING,
-    },
-    Hats: {
-      type: DataTypes.STRING,
-    },
-    Shoes: {
-      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
