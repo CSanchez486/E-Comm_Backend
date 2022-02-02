@@ -4,8 +4,3 @@ DROP DATABASE IF EXISTS ecommerce_db;
 -- CREATE DATABASE
 CREATE DATABASE ecommerce_db;
 
--- DATABASE TABLES
-CREATE TABLE category (
-    category_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    category_name VARCHAR(30) NOT NULL
-);  
